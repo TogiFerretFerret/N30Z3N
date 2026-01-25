@@ -12,6 +12,7 @@
 </div>
 
 ### softmodded neozen to my personal preferences. 
+### using a customized nightly version of zen browser
 
 # Neo Zen  
 
