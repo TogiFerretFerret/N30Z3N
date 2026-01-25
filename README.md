@@ -11,7 +11,7 @@
   <img src="https://github.com/user-attachments/assets/c37e9f4e-1ab1-43ec-945e-2be1592351a4" width="700" />
 </div>
 
-###
+### softmodded neozen to my personal preferences. 
 
 # Neo Zen  
 
