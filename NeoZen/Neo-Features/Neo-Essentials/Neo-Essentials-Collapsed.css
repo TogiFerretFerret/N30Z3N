@@ -91,7 +91,7 @@
 
                 /* Essentials pseudo element when no essential tab selected */
                 .zen-essentials-container::before {
-                    content: "N30" !important;
+                    content: "z3n" !important;
 					/* set font of content */
 					font-family: 'JetBrainsMono Nerd Font Mono', sans-serif !important;
                     white-space: pre-wrap !important;
