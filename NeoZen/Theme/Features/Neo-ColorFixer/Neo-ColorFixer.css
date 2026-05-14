@@ -4,11 +4,11 @@ when having a gradient or a color set*/
 
 :root {
     @media -moz-pref("zen.view.window.scheme", 0) or -moz-pref("zen.view.window.scheme", 2) {
-        --Neo-Browser-Background: #00000080 !important;
+        --Neo-Browser-Background: #15141E30 !important;
 
         @media (-moz-platform: linux) {
             @media -moz-pref("zen.widget.linux.transparency", true) {
-                --Neo-Browser-Background: #101010D0 !important;
+                --Neo-Browser-Background: #15141E50 !important;
             }
         }
 
@@ -44,6 +44,14 @@ when having a gradient or a color set*/
     }
 
     --Neo-Compact-Background: transparent;
+}
+
+/* Slightly darker content area */
+#tabbrowser-tabpanels {
+    background: rgba(0, 0, 0, 0.35) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    margin: 4px !important;
 }
 
 /* This change how the browser manage the color scheme when the background opacity is set to the lowest value, using the attribute declared in the

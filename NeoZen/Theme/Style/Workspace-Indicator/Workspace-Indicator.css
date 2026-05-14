@@ -125,8 +125,6 @@
 
                 &:not([zen-sidebar-expanded="true"]) zen-workspace {
                     & .zen-current-workspace-indicator {
-                        filter: drop-shadow(0px 0px 5px var(--zen-primary-color)) brightness(1.0) !important;
-
                         & .zen-current-workspace-indicator-icon {
                             color: var(--zen-primary-color) !important;
                             filter: drop-shadow(0px 0px 3px var(--zen-primary-color)) !important;
@@ -135,9 +133,8 @@
                         &::before {
                             content: "" !important;
                             background: transparent !important;
-                            border: 2px solid var(--Neo-Glow-Color-3) !important;
-                            box-shadow: 0px 0px 6px var(--Neo-Glow-Color-3), inset 0px 0px 6px var(--Neo-Glow-Color-3) !important;
-                            filter: drop-shadow(0px 0px 4px var(--zen-primary-color)) !important;
+                            border: 1.5px solid color-mix(in srgb, var(--zen-primary-color) 80%, white) !important;
+                            box-shadow: 0px 0px 6px color-mix(in srgb, var(--zen-primary-color) 80%, white), inset 0px 0px 4px color-mix(in srgb, var(--zen-primary-color) 40%, transparent) !important;
                             position: absolute !important;
                             border-radius: 50% !important;
                             width: 28px !important;
@@ -145,6 +142,7 @@
                             top: 50% !important;
                             left: 50% !important;
                             transform: translate(-50%, -50%) !important;
+                            pointer-events: none !important;
                         }
                     }
                 }
