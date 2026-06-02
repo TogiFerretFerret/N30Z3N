@@ -20,39 +20,29 @@
                             text-align: center !important;
                             justify-content: center !important;
                             margin-left: auto !important;
-                            margin-right: 50px !important;
+                            margin-right: auto !important;
                             width: 100% !important;
 
                             opacity: 1 !important;
+                            font-family: 'JetBrainsMono Nerd Font Mono', monospace !important;
                             font-weight: 500 !important;
-                            font-size: 14px !important;
-
-
+                            font-size: 13px !important;
 
                             filter: drop-shadow(0px 0px 8px var(--Neo-Glow-Color-1)) brightness(1.0) !important;
                         }
 
                         & .zen-current-workspace-indicator-stack {
-                            display: flex !important;
-                            flex-direction: row !important;
-
-                            min-width: 34px !important;
-                        }
-
-                        & .zen-current-workspace-indicator-stack>* {
-                            flex: 1 1 auto;
+                            display: none !important;
                         }
                         /*NeoZen: Fix for the workspace indicator not being centered and also the emoji selector was not being displayed
                          * when trying to change the icon of the workspace indicator, instead of using display: none, I used opacity: 0 to hide it
                          * when there is no icon, to keep the spacing between elements the icon is always diplayed using display: flex*/
                         .zen-current-workspace-indicator-icon:not(#PanelUI-zen-emojis-picker) {
-                            display: flex !important;
-                            position: relative !important;
-                            margin-left: 8px !important;
+                            display: none !important;
                         }
 
                         .zen-current-workspace-indicator-icon[no-icon="true"] {
-                            opacity: 0 !important;
+                            display: none !important;
                         }
 
                         & .zen-workspaces-actions {
@@ -79,9 +69,7 @@
                             margin: 0px !important;
 
                             & .zen-current-workspace-indicator-chevron {
-                                position: relative !important;
-                                display: flex !important;
-                                opacity: 1.0 !important;
+                                display: none !important;
                             }
                         }
 
@@ -133,8 +121,9 @@
                         &::before {
                             content: "" !important;
                             background: transparent !important;
-                            border: 1.5px solid color-mix(in srgb, var(--zen-primary-color) 80%, white) !important;
-                            box-shadow: 0px 0px 6px color-mix(in srgb, var(--zen-primary-color) 80%, white), inset 0px 0px 4px color-mix(in srgb, var(--zen-primary-color) 40%, transparent) !important;
+                            border: 2.5px solid var(--zen-primary-color) !important;
+                            box-shadow: 0px 0px 16px var(--zen-primary-color), 0px 0px 4px var(--zen-primary-color), inset 0px 0px 10px color-mix(in srgb, var(--zen-primary-color) 70%, transparent) !important;
+                            filter: brightness(1.5) drop-shadow(0px 0px 10px var(--zen-primary-color)) !important;
                             position: absolute !important;
                             border-radius: 50% !important;
                             width: 28px !important;

@@ -1,1 +1,10 @@
 @import "NeoZen/NeoZen.css";
+
+/* Hide window control buttons */
+.titlebar-buttonbox-container,
+.titlebar-close,
+.titlebar-min,
+.titlebar-max,
+.titlebar-restore {
+    display: none !important;
+}
