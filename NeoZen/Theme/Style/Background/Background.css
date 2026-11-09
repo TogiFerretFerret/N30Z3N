@@ -41,3 +41,11 @@ body {
   on linux using hyprland and wayland compositor, so for now I'll override the background directly. */
   background: transparent !important;
 }
+
+/* Firefox/Zen paint an opaque chrome background on window blur by default.
+   Without this, the whole window turns solid as soon as it isn't focused. */
+:root:-moz-window-inactive,
+#main-window:-moz-window-inactive,
+body:-moz-window-inactive {
+  background: transparent !important;
+}
