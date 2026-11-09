@@ -19,7 +19,7 @@ groupbox:not(#sineInstallationGroup:popover-open) {
 
   /* General page background */
   html, body, #toolbar, .App, .sticky-container, .main-search, .main-heading {
-    background-color: light-dark(#f1f1f1, #1a1a1a) !important;
+    background-color: transparent !important;
   }
 
   /* Tables and action boxes */
